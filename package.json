@@ -1,0 +1,30 @@
+{
+    "name": "@jnode/server-ws",
+    "version": "1.0.0",
+    "description": "Official WebSocket support for JNS.",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Hello, JNS WebSockets.\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/japple-jnode/server-ws.git"
+    },
+    "keywords": [
+        "JustNode",
+        "JNS",
+        "JNodeServer",
+        "JustApple",
+        "WebSockets",
+        "WS"
+    ],
+    "author": "JustApple <apple@justapple.tw>",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/japple-jnode/server-ws/issues"
+    },
+    "homepage": "https://github.com/japple-jnode/server-ws#readme",
+    "dependencies": {
+        "@jnode/websocket": "^1.0.0"
+    }
+}
