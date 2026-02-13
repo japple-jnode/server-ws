@@ -7,7 +7,7 @@ by JustApple
 */
 
 // dependencies
-const { WSConnection, calculateWSKey } = require('./../../websocket');
+const { WSConnection, calculateWSKey } = require('@jnode/websocket');
 
 // is ws router
 class IsWSRouter {

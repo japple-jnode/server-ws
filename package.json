@@ -1,6 +1,6 @@
 {
     "name": "@jnode/server-ws",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Official WebSocket support for JNS.",
     "main": "src/index.js",
     "scripts": {
@@ -25,6 +25,6 @@
     },
     "homepage": "https://github.com/japple-jnode/server-ws#readme",
     "dependencies": {
-        "@jnode/websocket": "^1.0.0"
+        "@jnode/websocket": "^1.0.1"
     }
 }
