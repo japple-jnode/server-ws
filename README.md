@@ -1,7 +1,7 @@
 
 # `@jnode/server-ws`
 
-Official WebSocket support for `@jnode/server`.
+Official WebSocket support for JNS.
 
 ## Installation
 
@@ -67,7 +67,7 @@ Detects if the incoming request is a WebSocket handshake. It checks if the metho
 
 ### Handler: `WSHandler(cb[, options])`
 
-- `cb` [\<Function\>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) A callback function with signature `(conn) => void`. The `conn` argument is a [\<WSConnection\>](https://github.com/japple-jnode/websocket#class-wsconnection) instance.
+- `cb` [\<Function\>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) A callback function with signature `(conn, ctx, env) => void`. The `conn` argument is a [\<WSConnection\>](https://github.com/japple-jnode/websocket#class-wsconnection) instance.
 - `options` [\<Object\>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) Options passed to the internal [\<WSConnection\>](https://github.com/japple-jnode/websocket#class-wsconnection).
 
 Handles the WebSocket handshake. If the request headers are invalid, it throws a `426 Upgrade Required` error. Otherwise, it sends the `101 Switching Protocols` response, flushes the headers, and invokes the callback with a [\<WSConnection\>](https://github.com/japple-jnode/websocket#class-wsconnection) instance.

@@ -56,7 +56,7 @@ class WSHandler {
         // log
         if (typeof ctx.finalizeLog === 'function') ctx.finalizeLog();
 
-        this.cb(new WSConnection(ctx.req.socket, ctx.res.socket, this.options));
+        this.cb(new WSConnection(ctx.req.socket, ctx.res.socket, this.options), ctx, env);
     }
 }
 
